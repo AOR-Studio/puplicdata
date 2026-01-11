@@ -43,6 +43,11 @@ body {
 .menu {
   grid-area: menu;
   }
+
+  /* Tells the browser to show the hand icon even without an href */
+.menu-link {
+  cursor: pointer;
+}
   
 .menu ul {
   list-style-type: none;
@@ -150,7 +155,11 @@ li a:visited {
 
 <div class="menu">
     <ul>
-        <li><a href="#" onclick="loadContent('reengineering-tasks.html')">Rengineering Tasks</a></li>
+        <li> 
+           <a class="menu-link" onclick="loadContent('reengineering-tasks.html')">
+             Rengineering Tasks
+          </a>        
+        </li>
         <li><a href="publications.html">Research Publications</a></li>
         <li><a href="blog.html">Autoethnography Blog</a></li>
         <li><a href="partners.html">Partners & Cooperators</a></li>
