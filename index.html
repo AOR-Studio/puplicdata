@@ -60,6 +60,26 @@ body {
 .menu li:hover {
   background-color: #0099cc;
 }
+
+/* Selects the nested list item */
+
+.menu ul ul { 
+  padding-left: 25px; /* Adds extra indentation specifically to the left */
+}
+.menu ul ul li {
+  /* padding: 10px;  Adds 10px padding on all sides */
+  padding-left: 10px; /* Adds extra indentation specifically to the left */
+}
+
+li a {
+  color: inherit;            /* Forces link to use the parent <li> color */
+  text-decoration: none;     /* Removes the default underline */
+}
+
+/* Optional: Keep the color the same even after the link is clicked */
+li a:visited {
+  color: inherit;
+}
   
 .content {
   grid-area: main;
@@ -128,13 +148,13 @@ body {
 </div>
 
 <div class="menu">
-  <ul>
-    <li>Reengineering Tasks</li>
-    <li>Research Publications</li>
-    <li>Autoethnography Blog</li>
-    <li>Partners & Cooperators</li>
-    <li>Contact Infos</li>
-  </ul>
+    <ul>
+        <li><a href="reengineering-tasks.html">Rengineering Tasks</a></li>
+        <li><a href="publications.html">Research Publications</a></li>
+        <li><a href="blog.html">Autoethnography Blog</a></li>
+        <li><a href="partners.html">Partners & Cooperators</a></li>
+        <li><a href="contact.html">Contact Infos</a></li>
+    </ul>
 </div>
 
 <div class="content">
