@@ -132,6 +132,7 @@ li a:visited {
   .footer {grid-area: 3 / span 6;}
 }
 </style>
+<script src="js/scripts.js" defer></script>
 </head>
 <body>
 
@@ -149,7 +150,7 @@ li a:visited {
 
 <div class="menu">
     <ul>
-        <li><a href="reengineering-tasks.html">Rengineering Tasks</a></li>
+        <li><a href="#" onclick="loadContent('reengineering-tasks.html')">Rengineering Tasks</a></li>
         <li><a href="publications.html">Research Publications</a></li>
         <li><a href="blog.html">Autoethnography Blog</a></li>
         <li><a href="partners.html">Partners & Cooperators</a></li>
@@ -157,7 +158,7 @@ li a:visited {
     </ul>
 </div>
 
-<div class="content">
+<div id="content" class="content">
   <h1><span style="color: #0099cc; font-weight: bold;">AOR</span> Studio</h1>
   
   <p>
