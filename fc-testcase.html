@@ -1,64 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FC-1 Image Preview</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
 
+    .image-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      max-width: 760px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .image-card__media {
+      position: relative;
+      padding: 24px;
+      background: #121212;
+    }
+
+    .image-card__media img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .image-card__body {
+      padding: 24px;
+    }
+
+    .image-card__title {
+      margin: 0 0 12px;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .image-card__description {
+      margin: 0;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .image-card__note {
+      margin-top: 18px;
+      padding: 12px 16px;
+      background: #f7f7f7;
+      border-radius: 8px;
+      color: #666;
+      font-size: .95rem;
+    }
+  </style>
 </head>
 <body>
-
-
-<div class="grid-container">
-
-<div class="header">
-    <h1> Studio for 
-       <span style="color: #33b5e5; font-weight: bold;">A</span>rt-therapy 
-       <span style="color: #33b5e5; font-weight: bold;">O</span>riented
-       <span style="color: #33b5e5; font-weight: bold;">R</span>eengineering 
-    </h1>
-    <h3>Wassim Mahfouz</h3>
-</div>
-
-
-
-<div id="content" class="content">
-  <h1><span style="color: #33b5e5; font-weight: bold;">AOR</span> Studio</h1>
-  
-  <p>
-        The studio enables research for <span style="color: #33b5e5; font-weight: bold;">A</span>rt-therapy <span style="color: #33b5e5; font-weight: bold;">O</span>riented <span style="color: #33b5e5; font-weight: bold;">R</span>eengineering (<span style="color:#33b5e5; font-weight: bold;">AOR</span>) of Formative e-Assessment (FA) systems.  
-                       
-        It was founded by me as a volunteer to express my interests to research how to reengineer FA systems to serve formation/education approaches to oppression/alienation. 
-        The approaches under research  are oriented by art therapy inquiries  to serve oppressed or alienated adults interested in self-overcoming of their oppressions/alienations. 
-           
-        <br>
-        <br> 
-        
-        The studio offers research services/interventions for communities/teams of teachers, training organizers, and social-pedagogues in three groups of settings; <br> 
-        <ol>
-            <li>pre-service settings</li>
-            <li>in-service settings </li>
-            <li>after-service settings (e.g, a setting for retired teachers)</li>
-       </ol>  
-
-
-
-
-  </p>
-
-</div>  
-
-<div class="facts">
-  <h2>Art Objects:</h2>
-  <ul>
-    <li>Stone sculpture for woman with cancer</li>
-    <li>Drawing expressions of alienation in schooling</li>
-  </ul>
-</div>
-
-<div class="footer">
-    <p>AOR Studio, Nürnberg, Germany </p>   
-</div>
-
+  <article class="image-card">
+    <div class="image-card__media">
+      <img src="./assests/images/FC-1.png" alt="FC-1 image preview" />
+    </div>
+    <div class="image-card__body">
+      <h1 class="image-card__title">FC-1 Image Preview</h1>
+      <p class="image-card__description">
+        This HTML5 page shows the `FC-1.png` image from the project assets inside an image div.
+      </p>
+      <p class="image-card__note">
+        File path: <strong>/puplicdata/assests/imagesFC-1.png</strong>
+      </p>
+    </div>
+  </article>
 </body>
 </html>
-
